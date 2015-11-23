@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Scanimator App Landing Page">
+<meta name="keywords" content="Scanimator, Scan, App, Mobile, Android, iOS">
+<meta name="author" content="Grupo 3 - T1DQ">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title>Scanimator App</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS
+============================== -->
+
+<!-- Vertical Timeline -->
+<link rel="stylesheet" href="css/style.css">
+<script src="js/modernizr.js"></script>
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/NinjaGantt.css" type="text/css" />
+
+<!-- Vertical Timeline -->
+<link rel="stylesheet" href="css/style.css">
+<script src="js/modernizr.js"></script>
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/green.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> -->
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> "Old jquery with template"-->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/NinjaGantt.js" type="text/javascript"></script>
+
+<!-- NinjaGantt -->
+<script src="js/NinjaGantt.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var model = new Array();
+
+        model.push({ IDProject: 1, IDSprint: 0, IDTask: 0, Type: 1, Description: "Scanimator App", Start: new Date(2015, 11, 01), End: new Date(2016, 04, 20), Percent: null, User: null, Detalhe: 'Desenvolvimento da App Scanimator.' });
+          model.push({ IDProject: 1, IDSprint: 1, IDTask: 0, Type: 2, Description: "Preparação", Start: new Date(2015, 11, 01), End: new Date(2015, 11, 08), Percent: null, User: null, Detalhe: 'Nesta fase pretende-se estudar e planear o Projecto.' });
+            model.push({ IDProject: 1, IDSprint: 1, IDTask: 1, Type: 3, Description: "Breifing com Cliente.", Start: new Date(2015, 11, 01), End: new Date(2015, 11, 01), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Recolher toda a informação sobre o que o cliente pretende.' });
+            model.push({ IDProject: 1, IDSprint: 1, IDTask: 2, Type: 3, Description: "Apresentação do Projecto.", Start: new Date(2015, 11, 02), End: new Date(2015, 11, 02), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Apresentar à equipa o que consiste o projecto, para que se consiga estudar o processo necessário.' });
+            model.push({ IDProject: 1, IDSprint: 1, IDTask: 3, Type: 3, Description: "Analisar produtos similares.", Start: new Date(2015, 11, 03), End: new Date(2015, 11, 04), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Pesquisar por produtos similares e analisar as suas caracteristicas e comparar com o Produto desejado.' });
+            model.push({ IDProject: 1, IDSprint: 1, IDTask: 4, Type: 3, Description: "Definir as funcionalidades e prioridades.", Start: new Date(2015, 11, 04), End: new Date(2015, 11, 07), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Caracterizar e priorizar o desenvolvimento das funcionalidades da App.' });
+            model.push({ IDProject: 1, IDSprint: 1, IDTask: 5, Type: 3, Description: "Debate com todas Equipas sobre o Projecto.", Start: new Date(2015, 11, 07), End: new Date(2015, 11, 07), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Debate sobre o Projecto e o seu processo com as equipas de Design, Desenvolvimento e Testing.' });
+            model.push({ IDProject: 1, IDSprint: 1, IDTask: 6, Type: 3, Description: "Elaborar plano do projecto.", Start: new Date(2015, 11, 07), End: new Date(2015, 11, 08), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Elaborar o plano com todo o processo relacionado com o desenvolvimento da App e definir o que é pretendido por cada equipa.' });
+          model.push({ IDProject: 1, IDSprint: 2, IDTask: 0, Type: 2, Description: "Design", Start: new Date(2015, 11, 08), End: new Date(2016, 04, 20), Percent: null, User: null, Detalhe: 'Equipa responsável por criar todo o design, UI e UX da App.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 1, Type: 3, Description: "Elaborar protótipo da App (Wireframing).", Start: new Date(2015, 11, 08), End: new Date(2015, 11, 11), Percent: '0%', User: '2 Designers', Detalhe: 'Desenvolver o primeiro esboço sobre a App.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 2, Type: 3, Description: "Elaborar mockup da App (Alta Definição).", Start: new Date(2015, 11, 14), End: new Date(2015, 11, 18), Percent: '0%', User: '2 Designers', Detalhe: 'Desenvolver o esboço de alta definição, já com grande nível de detalhe sobre a App.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 3, Type: 3, Description: "Estudo sobre a UI da App.", Start: new Date(2015, 11, 21), End: new Date(2015, 12, 04), Percent: '0%', User: '2 Designers', Detalhe: 'Estudar o design e alternativas.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 4, Type: 3, Description: "Design dos elementos da UI da App.", Start: new Date(2015, 12, 05), End: new Date(2015, 12, 15), Percent: '0%', User: '2 Designers', Detalhe: 'Desenvolver o design da app após o seu intenso estudo.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 5, Type: 3, Description: "Revisão sobre a implementação da UX.", Start: new Date(2015, 12, 18), End: new Date(2015, 12, 22), Percent: '0%', User: '2 Designers', Detalhe: 'Estudar a UX (User Experience) conforme o trabalho desenvolvido pela equipa de design e equipa de desenvolvimento.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 6, Type: 3, Description: "Estudo sobre a UX da App.", Start: new Date(2015, 12, 25), End: new Date(2016, 01, 05), Percent: '0%', User: '2 Designers', Detalhe: 'Estudar o UX para desenvolver para a App.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 7, Type: 3, Description: "Análise/Correção após reunião com Cliente.", Start: new Date(2016, 01, 23), End: new Date(2016, 01, 26), Percent: '0%', User: '2 Designers', Detalhe: 'Analisar/Corrigir trabalho desenvolvido conforme reunião com Cliente.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 8, Type: 3, Description: "Melhorar/Alterar conforme análise da versão Beta.", Start: new Date(2016, 02, 21), End: new Date(2016, 03, 08), Percent: '0%', User: '2 Designers', Detalhe: 'Melhorar e/ou alterar o design após análise da versão Beta.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 9, Type: 3, Description: "Análise/Correção após reunião com Cliente.", Start: new Date(2016, 03, 11), End: new Date(2016, 03, 15), Percent: '0%', User: '2 Designers', Detalhe: 'Analisar/Corrigir trabalho desenvolvido conforme reunião com Cliente.' });
+            model.push({ IDProject: 1, IDSprint: 2, IDTask: 10, Type: 3, Description: "Estudo sobre a versão 2.0.", Start: new Date(2016, 03, 18), End: new Date(2016, 04, 20), Percent: '0%', User: '2 Designers', Detalhe: 'Estudar futuras melhorias da App.' });
+          model.push({ IDProject: 1, IDSprint: 3, IDTask: 0, Type: 2, Description: "Desenvolvimento", Start: new Date(2015, 11, 08), End: new Date(2016, 04, 20), Percent: null, User: null });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 1, Type: 3, Description: "Estudo sobre as funcionalidades a desenvolver.", Start: new Date(2015, 11, 08), End: new Date(2015, 11, 15), Percent: '0%', User: '2 Developers', Detalhe: 'Estudar como desenvolver as funcionalidades da App.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 2, Type: 3, Description: "Esquema de cenários e interações da App.", Start: new Date(2015, 11, 10), End: new Date(2015, 11, 15), Percent: '0%', User: '2 Developers', Detalhe: 'Esquematizar todas os cenários possiveis da App e a forma com vão interagir.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 3, Type: 3, Description: "Desenvolver o «core» da App.", Start: new Date(2015, 11, 16), End: new Date(2015, 12, 15), Percent: '0%', User: '4 Developers', Detalhe: 'Desenvolver as funcionalidades base (core) da App.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 4, Type: 3, Description: "Desenvolver as funcionalidades da Digitalização.", Start: new Date(2015, 12, 18), End: new Date(2016, 01, 05), Percent: '0%', User: '1 Developer', Detalhe: 'Desenvolver as funcionalidades relacionadas com a Digitalização.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 5, Type: 3, Description: "Desenvolver as funcionalidades de Edição.", Start: new Date(2015, 12, 18), End: new Date(2016, 01, 05), Percent: '0%', User: '2 Developers', Detalhe: 'Desenvolver as funcionalidades relacionadas com a Edição de Documentos.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 6, Type: 3, Description: "Desenvolver as funcionalidades de Partilha/Cloud.", Start: new Date(2015, 12, 18), End: new Date(2016, 01, 05), Percent: '0%', User: '1 Developer', Detalhe: 'Desenvolver as funcionalidades relacionadas com a Partilha e Armazenamento em serviços cloud ou localmente.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 7, Type: 3, Description: "“Code Review” e Resolver “Bugs”.", Start: new Date(2016, 01, 08), End: new Date(2016, 01, 19), Percent: '0%', User: '4 Developers', Detalhe: 'Rever (Refactoring) o código da App e corrigir possíveis erros.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 9, Type: 3, Description: "Análise/Correção após reunião com Cliente.", Start: new Date(2016, 01, 23), End: new Date(2016, 02, 04), Percent: '0%', User: '2 Developers', Detalhe: 'Analisar/Corrigir trabalho desenvolvido conforme reunião com Cliente.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 10, Type: 3, Description: "Implementar UI e UX.", Start: new Date(2016, 01, 29), End: new Date(2016, 02, 04), Percent: '0%', User: '2 Developers', Detalhe: 'Implementar o Design ao código desenvolvido.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 11, Type: 3, Description: "Melhorar/Desenvolver funcionalidades da App.", Start: new Date(2016, 02, 07), End: new Date(2016, 02, 18), Percent: '0%', User: '4 Developers', Detalhe: 'Melhorar o código desenvolvido.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 12, Type: 3, Description: "Melhorar/Alterar conforme análise da versão Beta.", Start: new Date(2016, 02, 21), End: new Date(2016, 03, 01), Percent: '0%', User: '4 Developers', Detalhe: 'Melhorar e/ou alterar o código após análise da versão Beta.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 13, Type: 3, Description: "“Code Review” e Resolver “Bugs”.", Start: new Date(2016, 03, 04), End: new Date(2016, 03, 08), Percent: '0%', User: '4 Developers', Detalhe: 'Rever (Refactoring) o código da App e corrigir possíveis erros.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 14, Type: 3, Description: "Análise/Correção após reunião com Cliente.", Start: new Date(2016, 03, 11), End: new Date(2016, 03, 15), Percent: '0%', User: '4 Developers', Detalhe: 'Analisar/Corrigir trabalho desenvolvido conforme reunião com Cliente.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 15, Type: 3, Description: "Lançamento Oficial da versão 1.0.", Start: new Date(2016, 03, 20), End: new Date(2016, 03, 20), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Lançamento oficial da primeira versão da App.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 16, Type: 3, Description: "Estudo/Desenvolvimento da versão 2.0.", Start: new Date(2016, 03, 21), End: new Date(2016, 04, 20), Percent: '0%', User: '2 Developers', Detalhe: 'Estudar e desenvolver futuras melhorias da App.' });
+            model.push({ IDProject: 1, IDSprint: 3, IDTask: 17, Type: 3, Description: "Resolver “Bugs”", Start: new Date(2016, 03, 21), End: new Date(2016, 04, 20), Percent: '0%', User: '2 Developers', Detalhe: 'Resolver os erros encontrados da App.' });
+          model.push({ IDProject: 1, IDSprint: 4, IDTask: 0, Type: 2, Description: "Testing", Start: new Date(2016, 01, 08), End: new Date(2016, 04, 20), Percent: null, User: null });
+            model.push({ IDProject: 1, IDSprint: 4, IDTask: 1, Type: 3, Description: "“Pre-Release” e 1º Testing Interno.", Start: new Date(2016, 01, 08), End: new Date(2016, 01, 12), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Primeiro teste da App a nivel interno apenas.' });
+            model.push({ IDProject: 1, IDSprint: 4, IDTask: 2, Type: 3, Description: "1º Testing Externo.", Start: new Date(2016, 01, 15), End: new Date(2016, 01, 19), Percent: '0%', User: 'Cliente', Detalhe: 'Primeiro teste da App a nivel interno externo (Cliente).' });
+            model.push({ IDProject: 1, IDSprint: 4, IDTask: 3, Type: 3, Description: "Lançamento da versão Beta.", Start: new Date(2016, 02, 07), End: new Date(2016, 02, 07), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Lançamento oficial da primeira versão Beta com especial atenção as opinões do grupo de testers externos.' });
+            model.push({ IDProject: 1, IDSprint: 4, IDTask: 4, Type: 3, Description: "Entrevistar utilizadores e grupos de foco.", Start: new Date(2016, 02, 08), End: new Date(2016, 02, 18), Percent: '0%', User: '4 Testers', Detalhe: 'Reter as opinões do grupo de testers externos.' });
+            model.push({ IDProject: 1, IDSprint: 4, IDTask: 5, Type: 3, Description: "“Pre-Release” da versão 1.0.", Start: new Date(2016, 03, 04), End: new Date(2016, 03, 08), Percent: '0%', User: '4 Testers', Detalhe: 'Testing interno e externo da pre-release da app.' });
+            model.push({ IDProject: 1, IDSprint: 4, IDTask: 6, Type: 3, Description: "Entrevistar utilizadores e analisar a opinião pública.", Start: new Date(2016, 03, 21), End: new Date(2016, 04, 20), Percent: '0%', User: '4 Testers', Detalhe: 'Reter e anaisar as opinões da opinião pública.' });
+          model.push({ IDProject: 1, IDSprint: 5, IDTask: 0, Type: 2, Description: "Client Review", Start: new Date(2015, 11, 01), End: new Date(2016, 04, 20), Percent: null, User: null });
+            model.push({ IDProject: 1, IDSprint: 5, IDTask: 1, Type: 3, Description: "1ª Reunião", Start: new Date(2015, 11, 20), End: new Date(2015, 11, 20), Percent: '100%', User: 'Equipa Toda', Detalhe: 'Apresentação do Protótipo e do Plano de Desenvolvimento.' });
+            model.push({ IDProject: 1, IDSprint: 5, IDTask: 2, Type: 3, Description: "2ª Reunião", Start: new Date(2015, 12, 20), End: new Date(2015, 12, 20), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Breifing do desenvolvimento da App.' });
+            model.push({ IDProject: 1, IDSprint: 5, IDTask: 3, Type: 3, Description: "3ª Reunião", Start: new Date(2016, 01, 22), End: new Date(2016, 01, 22), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Testar e analisar o primeiro «build».' });
+            model.push({ IDProject: 1, IDSprint: 5, IDTask: 4, Type: 3, Description: "4ª Reunião", Start: new Date(2016, 03, 08), End: new Date(2016, 03, 08), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Rever a App para Lançamento.' });
+            model.push({ IDProject: 1, IDSprint: 5, IDTask: 5, Type: 3, Description: "5ª Reunião", Start: new Date(2016, 03, 29), End: new Date(2016, 03, 29), Percent: '0%', User: 'Equipa Toda', Detalhe: 'Analise Pós-Lançamento e Debate sobre os próximos passos.' });
+
+        //-- prepare left side columns
+        var columnsModel = new Array();
+        columnsModel.push({ width: '322px', text: 'Descrição', fieldName: 'Description' });
+        columnsModel.push({
+            width: '50px', text: 'Dias', format: function (obj) {
+                var days = Math.floor(((obj.End - obj.Start) / (1000 * 60 * 60 * 24)) + 1);
+                return '<span>' + days + '<span>';
+            }
+        });
+        columnsModel.push({ width: '90px', text: 'Atribuido:', fieldName: 'User' });
+
+        //-- call ninjaGantt
+        $("#ninjaGantt").ninjaGantt({
+            sourceList: model,
+            columns: columnsModel,
+            fixed: false,
+            maxHeight: 600,
+            onLeftItemClick: function (e) {
+                var model = e.data.obj;
+                switch (model.Type) {
+                    case 1: { alert('Projecto: ' + model.Description + '\n\n' + model.Detalhe); break; }
+                    case 2: { alert(model.Description +"\n\n" + model.Detalhe); break; }
+                    case 3: { alert(model.Description +"\n\n" + model.Detalhe); break; }
+                }
+            },
+            onRightItemClick: function (e) {
+                var model = e.data.obj;
+                alert('A tarefa está ' + model.Percent + ' completa!');
+            }
+        });
+    });
+</script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE LOADER
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     HEADER
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+
+			</div>
+
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#features">Funcionalidades</a></li>
+					<li><a href="#app">Sobre a App</a></li>
+					<li><a href="#app_reais">Usabilidade</a></li>
+					<li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#estado-de-arte">Estado da Arte</a></li>
+					<li><a href="#gantt">Gantt</a></li>
+					<li><a href="#planoControlo">Plano de Controlo</a></li>
+          <li><a href="#equipa">Equipa</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+
+
+	<!-- CONTAINER -->
+	<div class="container">
+
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/logo.png" alt="">
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">
+            Scanimator
+					</h1>
+          <!-- <h3>Digitalize documentos em qualquer sítio! e com a comodidade do seu telemóvel.</h3> -->
+          <p>
+            O Scanimator capta o papel existente no seu dia-a-dia de forma rápida e eficaz,
+            transformando-o em digitalizações de alta qualidade prontas a serem guardadas ou partilhadas.
+          </p>
+					<h5>Brevemente na App Store e Play Store</h5>
+
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+            <img src="images/brevemente.png" alt="Coming Soon" />
+					</div>
+					<!-- /END BUTTONS -->
+
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+
+			</div>
+
+
+			<div class="col-md-6 col-sm-6 hidden-xs">
+
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="phone-image">
+			    <img src="images/2-iphone-right.png" class="img-responsive" alt="">
+			    </div>
+
+			</div>
+
+		</div>
+		<!-- /END ROW -->
+
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+<!-- =========================
+     FEATURES
+============================== -->
+<section class="features" id="features">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+			<!-- <p>
+					NOTA PARA DANIEL - Mudei tudo o que tinha a mudar e tive que adicionar algumas coisas, tais como umas br(brakerow) e tal para a formatação ficar igual, deixei algumas partes como estavam
+					para poderes adicionar o Gantt, deixei o video e as affordable packages, assim podes mudar o que tiveres a mudar.
+					Outra coisa, eu quando queria atualizar a página, notei que por vezes o website fica num loop ao início, quando atualizares alguma coisa e quiseres ver, carrega no refresh, se o website entrar em loop, cancela o refresh, irá-te levar ao
+					website e com os dados atualizados. Se demorar muito a carregar a página, abre num novo separador. Por vezes basta dar refresh e ele leva logo à pagina.</p> -->
+
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">Funcionalidades</h2>
+		<div class="colored-line">
+		</div>
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+
+
+	<div class="row">
+
+		<!-- FEATURES LEFT -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_search_alt"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Digitalizar</h4>
+					<ul>
+  					<li>Documentos</li>
+  					<li>Recibos</li>
+  					<li>Cartões de Visita</li>
+            <li>Fotos</li>
+          </ul>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+      <!-- FEATURE -->
+      <div class="feature">
+
+        <!-- ICON -->
+        <div class="icon-container">
+          <div class="icon">
+            <i class="icon_pencil-edit"></i>
+          </div>
+        </div>
+
+        <!-- FEATURE HEADING AND DESCRIPTION -->
+        <div class="fetaure-details">
+          <h4 class="main-color">Editar</h4>
+          <ul>
+            <li>Anotar, Comentar e Sublinhar</li>
+            <li>Assinar Documentos</li>
+            <li>Preto/Branco, Cores ou Escala de Cinza</li>
+            <li>Cortar ou Redimensionar</li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- /END SINGLE FEATURE -->
+
+		</div>
+		<!-- /END FEATURES LEFT -->
+
+		<!-- PHONE IMAGE -->
+		<div class="col-md-4 col-sm-4">
+			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/single-iphone.png" alt="">
+			</div>
+		</div>
+
+		<!-- FEATURES RIGHT -->
+		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_cloud-upload"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Armazenar</h4>
+						<ul>
+					<li>Localmente na Aplicação</li>
+					<li>Galeria de Fotografias do Smartphone</li>
+					<li>Serviços Cloud (Dropbox, Google Drive,</li>
+          <li> OneDrive, etc.)</li>
+        </ul>
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEATURE -->
+
+			<!-- FEATURE -->
+			<div class="feature">
+
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="social_share"></i>
+					</div>
+				</div>
+
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+          <h4 class="main-color">Partilhar</h4>
+					<ul>
+					  <li>Email</li>
+					  <li>Redes Sociais</li>
+          </ul>
+				</div>
+
+			</div>
+
+			<!-- /END SINGLE FEATURE -->
+
+		</div>
+		<!-- /END FEATURES RIGHT -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     BRIEF LEFT SECTION
+============================== -->
+<section class="app-brief deep-dark-bg" id="app">
+
+<div class="container">
+
+	<div class="row">
+
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/2-iphone-left.png" alt="">
+			</div>
+		</div>
+
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- SECTION TITLE -->
+			<h2 class="white-text">A App</h2>
+
+			<div class="colored-line-left">
+			</div>
+
+			<p>
+			Scanimator é uma aplicação móvel para iPhone e Android que permite digitalizar um documento em qualquer lugar.
+      Esta aplicação instantaneamente reconhece o documento da imagem captada, transformando-a num documento digital,
+      ou seja, permite aprimorar a qualidade do documento, eliminando o "fundo" e fixando no documento em si.
+      </p>
+      <p>
+      Permite a digitalização de vários documentos, nomeadamente, contractos, faturas, fotografias, etc.
+      Para além da digitalização, a aplicação dispõe de várias funcionalidades: sublinhar, comentar, cortar, redimensionar, etc.
+      </p>
+      <p>
+      Permite guardar o documento localmente, ou na Cloud (Dropbox, iCloud, etc.). O Utilizador pode guardar tanto em formato PDF ou JPEG.
+      Finalmente terá a possibilidade enviar por email, ou partilhar nas redes sociais(Facebook, Twitter, etc).
+			</p>
+
+			<!-- FEATURE LIST -->
+			<!-- <ul class="feature-list">
+				<li><i class="icon_lock_alt"></i> Aplicação Segura e Funcional</li>
+				<li><i class="icon_check_alt2"></i>Tudo organizado para uma boa utilização</li>
+				<li><i class="icon_adjust-vert"></i>Muitas Funcionalidades</li>
+			</ul> -->
+
+		</div>
+		<!-- /END RIGHT BRIEF -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+<!-- =========================
+     BRIEF RIGHT SECTION
+============================== -->
+<section class="app-brief" id="app_reais">
+
+<div class="container">
+
+	<div class="row">
+
+		<!-- BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- SECTION TITLE -->
+			<h2 class="white-text">Aplicações Reais</h2>
+			<div class="colored-line-left">
+			</div>
+  			<br>
+  			<ul class="list">
+    			<li>
+            “Um professor que poderá rever um trabalho académico durante a viagem de
+            transportes públicos, ou seja, aumentando a produtividade nos tempos de comutação.”
+          </li>
+    			<li>
+            "Se um aluno faltar às aulas por motivo de força maior, pode pedir a um colega o caderno para poder
+            digitalizar a matéria ou exercícios resolvidos do dia em que faltou, podendo assim manter o seu estudo em dia."
+          </li>
+    			<li>
+            "Um empresário precisa enviar e assinar um documento urgente, com a aplicação,
+            pode fazê-lo rapidamente e de forma simples."
+          </li>
+      </ul>
+		</div>
+		<!-- /ENDBRIEF -->
+
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/2-iphone-right.png" alt="">
+			</div>
+		</div>
+		<!-- /END PHONES IMAGE -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+<!-- SECTION OBJECTIVOS -->
+
+<section class="app-brief deep-dark-bg" id="objetivos">
+
+<div class="container">
+
+	<div class="row">
+
+    <!-- PHONES IMAGE -->
+    <div class="col-md-6 wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+      <div class="phone-image">
+        <img src="images/2-iphone-left.png" alt="">
+      </div>
+    </div>
+    <!-- /END PHONES IMAGE -->
+
+		<!-- BRIEF -->
+		<div class="col-md-6 left-align wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+			<!-- SECTION TITLE -->
+			<h2 class="white-text">Problemas a resolver</h2>
+			<div class="colored-line-left">
+			</div>
+			<br>
+			<ul class="list">
+  			<li>Resolver o problema da mobilidade de um scanner.</li>
+  			<li>Aumentar o conforto do utilizador, permitindo digitalizar em qualquer lado.</li>
+  			<li>Aumentar a produtividade.</li>
+  			<li>Facilitar a revisão e transferência de documentos.</li>
+  			<li>Rapidez de digitalização.</li>
+  			<li>Substituir o scanner comum.</li>
+        <li>Digitalizar qualquer tipo de formato.</li>
+      </ul>
+
+		</div>
+		<!-- /ENDBRIEF -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+<!-- =========================
+    Estado da Arte
+============================== -->
+<section id="estado-de-arte" class="download wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+<div class="color-overlay" style="padding-top: 70px; padding-bottom: 70px; background-color: rgba(32,41,63,0.9)">
+
+	<div class="container">
+
+    <!-- SECTION HEADER -->
+  	<div class="section-header" style="padding-bottom: 0px;">
+
+  		<!-- SECTION TITLE -->
+  		<h2 class="white-text">Estado da Arte</h2>
+  		<div class="colored-line">
+  		</div>
+  	</div>
+  	<!-- /END SECTION HEADER -->
+
+    <div id="carousel-example-generic" class="row carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="row estado-de-arte">
+
+            <!-- PHONES IMAGE -->
+            <div class="col-md-5">
+              <div class="phone-image">
+                <img src="images/single-iphone.png" alt="">
+              </div>
+            </div>
+            <!-- /END PHONES IMAGE -->
+
+        		<!-- BRIEF -->
+        		<div class="col-md-6 col-md-offset-1 eda-text">
+
+        			<!-- SECTION TITLE -->
+        			<h3 class="white-text">Evernote Scannable</h3>
+        			<br>
+              <p>
+                Esta app funciona apenas para iOS, é grátis e tem muitas semelhanças com aquilo que pretendemos para a nossa App.
+                Permite anotar, enviar por e-mail ou partilhar, e é muito intuituva. Tem excelentes revisões pelos utilizadores.
+              </p>
+              <p>
+                Aspecto interessante é a integração com o LinkedIn, o Scannable tem a posibilidade de determinar se a imagem captada
+                é um cartão de visita, e conectar-se ao LinkedIn para obter informações sobre o contato.
+              </p>
+              <h5>Bibliografia:</h5>
+        			<ul>
+          			<li>https://itunes.apple.com/pt/app/evernote-scannable/id883338188?mt=8</li>
+          			<li>http://www.pcmag.com/article2/0,2817,2475161,00.asp</li>
+          			<li>http://www.zdnet.com/article/review-scannable-for-evernote-ios/</li>
+              </ul>
+
+        		</div>
+        		<!-- /ENDBRIEF -->
+
+        	</div>
+        	<!-- /END ROW -->
+        </div>
+        <div class="item">
+          <div class="row estado-de-arte">
+
+            <!-- PHONES IMAGE -->
+            <div class="col-md-5">
+              <div class="phone-image">
+                <img src="images/scanbot.png" alt="">
+              </div>
+            </div>
+            <!-- /END PHONES IMAGE -->
+
+        		<!-- BRIEF -->
+        		<div class="col-md-6 col-md-offset-1 eda-text">
+
+        			<!-- SECTION TITLE -->
+        			<h3 class="white-text">Scanbot</h3>
+        			<br>
+              <p>
+                App completa de funcionalidades (scan, partilhar, assinar, anotar, encriptar, etc). Disponível tanto para iOS como Android.
+                Existem duas versões, pro e grátis, a grátis tem as funcionalidades básicas e necessárias, digitslizar, corrigir a imagem,
+                partilhar e guardar na cloud (DropBox, Google Play, OneCloud, etc).
+              </p>
+              <p>
+                A versão pro tem as opções de escolher temas, exportar scans localizações preferidas, nomes
+                inteligentes e OCR, a opção PRO pode ser gratuita se o utilizador permitir publicidade na aplicação.
+              </p>
+              <h5>Bibliografia:</h5>
+        			<ul>
+          			<li>https://play.google.com/store/apps/details?id=net.doo.snap</li>
+          			<li>https://itunes.apple.com/us/app/scanbot/id834854351?mt=8</li>
+          			<li>https://scanbot.io/en/index.html</li>
+              </ul>
+
+        		</div>
+        		<!-- /ENDBRIEF -->
+
+        	</div>
+        	<!-- /END ROW -->
+        </div>
+        <div class="item">
+          <div class="row estado-de-arte">
+
+            <!-- PHONES IMAGE -->
+            <div class="col-md-5">
+              <div class="phone-image">
+                <img src="images/office-lens.png" alt="">
+              </div>
+            </div>
+            <!-- /END PHONES IMAGE -->
+
+        		<!-- BRIEF -->
+        		<div class="col-md-6 col-md-offset-1 eda-text">
+
+        			<!-- SECTION TITLE -->
+        			<h3 class="white-text">Office Lens</h3>
+        			<br>
+              <p>
+                App recheada de funcionalidades também. Tem a opção de enviar por email, compatível com plataformas iOS, Android e Windows Phone.
+                É uma aplicação grátis, tem a função de conseguir reconhecer os cantos de uma folha,
+                recorta-a e melhora a imagem.
+              </p>
+              <p>
+                Contudo, focalizado para utilizadores do Microsoft Office, visto que a maioria das funcionalidades estão restritas a subscritores
+                de Microsoft Office.
+              </p>
+              <h5>Bibliografia:</h5>
+        			<ul>
+          			<li>http://pplware.sapo.pt/smartphones-tablets/android/microsoft-lanca-o-office-lens-para-android-e-ios/</li>
+          			<li>https://blogs.office.com/2015/05/27/office-lens-android-now-available-at-google-play-store/</li>
+              </ul>
+
+        		</div>
+        		<!-- /ENDBRIEF -->
+
+        	</div>
+        	<!-- /END ROW -->
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="background:none; left:-130px;">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="background:none; right:-130px;">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+	</div>
+	<!-- /END CONTAINER -->
+
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END TESTIMONIALS SECTION -->
+
+<!-- =========================
+     Gráfico Gantt
+============================== -->
+<section class="packages" id="gantt">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">Gráfico Gantt</h2>
+		<div class="colored-line">
+		</div>
+
+		<div class="section-description">
+			 Representação da gestão do projecto com um gráfico Gantt.
+		</div>
+
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+
+    <div class="row single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- Grafico GANTT -->
+		<!--<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">-->
+
+			<div id="ninjaGantt"></div>
+		</div>
+		<!-- /END GANTT -->
+
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+</section>
+<!-- /END PRICING TABLE SECTION -->
+
+<section class="deep-dark-bg packages" id="planoControlo">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s" style="padding-bottom: 0px;">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">Plano de Controlo de Execução</h2>
+
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			Plano que define os "Pontos de Situação" periódicos com o Cliente e/ou Equipa.
+		</div>
+		<div class="colored-line">
+		</div>
+
+	</div>
+	<!-- /END SECTION HEADER -->
+
+	<div class="row">
+
+    <section id="cd-timeline" class="cd-container">
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-equipa">
+          <div class="icon">
+            <i class="social_myspace"></i>
+          </div>
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>Reunião com Equipa</h2>
+          <p>
+            Debate sobre o projecto com as equipas de design, desenvolvimento e testing.
+            Estipular os objectivos, as metas e os processos necessários para desenvolver a App.
+          </p>
+          <span class="cd-date">08 Dez 2015</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-cliente">
+          <div class="icon">
+            <i class="icon_briefcase_alt"></i>
+          </div>
+        </div> <!-- cd-timeline-img -->
+
+
+        <div class="cd-timeline-content">
+          <h2>1ª Reunião com Cliente.</h2>
+          <h3>Apresentação do Protótipo e do Plano de Desenvolvimento.</h3>
+          <p>
+            Nesta reunião o objectivo principal é ter um protótipo da App com o aspecto visual e funcionalidades ja bem definidas.
+            Se houver algum contra-tempo com o que foi pedido pelo Cliente agora é a altura para as expor e considerar alternativas.
+            Após a análise do protótipo e do ponto de situação, vamos explicar o processo de desenvolvimento e o deadline.
+          </p>
+          <span class="cd-date">20 Dez 2015</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-cliente">
+            <div class="icon">
+              <i class="icon_briefcase_alt"></i>
+            </div>
+          </div> <!-- cd-timeline-img -->
+
+
+          <div class="cd-timeline-content">
+            <h2>2ª Reunião com Cliente.</h2>
+            <h3>Briefing do desenvolvimento da App.</h3>
+            <p>
+              Exposição das funcionalidades da App, já desenvolvidas, e retirar opiniões do Cliente para verificar se a
+              App encontra-se conforme as ideias do Cliente.
+              Explicar os passos seguintes do processo e considerar as alterações necessárias.
+            </p>
+            <span class="cd-date">20 Jan 2016</span>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-cliente">
+          <div class="icon">
+            <i class="icon_briefcase_alt"></i>
+          </div>
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>3.ª Reunião com Cliente</h2>
+          <h3>Testar e analisar o primeiro "build". </h3>
+          <p>
+            Revisão do primeiro Teste, tanto do Cliente, como da Equipa, expor as dificuldades sentidas, ou não, e
+            re-analisar o "timeline" se está conforme planeado ou se necessita de alterações. Ponto chave,
+            para verificar a viabilidade dos objectivos do Projecto. Caso seja necessário, retirar funcionalidades ou
+            altera-las este será a ultima oportunidade de debate-las com o Cliente, pois a próxima fase será a de consolidadar a App.
+          </p>
+          <span class="cd-date">22 Feb 2016</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-cliente">
+          <div class="icon">
+            <i class="icon_briefcase_alt"></i>
+          </div>
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>4.ª Reunião com Cliente</h2>
+          <h3>Rever a App para Lançamento.</h3>
+          <p>
+            Apresentar a App ao Cliente, expor e considerar as informações retiradas pelas entrevistas,
+            aprimorar os detalhes finais e reorganizar os objectivos por completar e expor os erros que vão
+            ao não ser corrigidos até ao lançamento. Após este debate, obter, ou não, a luz verde para o lançamento.
+          </p>
+          <span class="cd-date">08 Abr 2016</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-equipa">
+          <div class="icon">
+            <i class="social_myspace"></i>
+          </div>
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>Reunião com Equipa</h2>
+          <p>
+            Debate sobre o futuro da App e "Brain Storming" sobre futuras funcionalidades e/ou modificações.
+          </p>
+          <span class="cd-date">21 Abr 2016</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-cliente">
+            <div class="icon">
+              <i class="icon_briefcase_alt"></i>
+            </div>
+          </div> <!-- cd-timeline-img -->
+
+
+          <div class="cd-timeline-content">
+            <h2>5ª Reunião com Cliente.</h2>
+            <h3>Analise Pós-Lançamento e Debate sobre os próximos passos.</h3>
+            <p>
+              Breifing sobre o produto e os proximos objectivos/passos e expor os pontos positivos e
+              negativos do processo, produtividade e do produto.
+              E debater sobre a resolução dos erros criticos se existirem.
+            </p>
+            <span class="cd-date">29 Abr 2016</span>
+          </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+      </section> <!-- cd-timeline -->
+		<!-- /END SCREENSHOTS -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SCREENSHOTS SECTION -->
+
+<!-- =========================
+     TESTIMONIALS
+============================== -->
+<section class="testimonials" id="equipa">
+
+<div class="color-overlay">
+
+	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- FEEDBACKS -->
+		<div id="feedbacks" class="owl-carousel owl-theme">
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/1.jpg" alt="">
+				</div>
+
+				<div class="message">
+					1151452
+				</div>
+
+				<div class="white-line">
+				</div>
+
+				<!-- INFORMATION -->
+				<div class="name">
+					Daniel Gonçalves
+				</div>
+				<div class="company-info">
+					CEO, Scanimator Limitada
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>
+
+				<div class="message">
+				Bossman
+				</div>
+
+				<div class="white-line">
+				</div>
+
+				<!-- INFORMATION -->
+				<div class="name">
+					Nelson Azevedo
+				</div>
+				<div class="company-info">
+					CEO, Scanimator Limitada
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>
+
+				<div class="message">
+				Bossman
+				</div>
+
+				<div class="white-line">
+				</div>
+
+				<!-- INFORMATION -->
+				<div class="name">
+					Carlos Açoreira
+				</div>
+				<div class="company-info">
+					CEO, Scanimator Limitada
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>
+
+				<div class="message">
+					Bossman
+					</div>
+
+				<div class="white-line">
+				</div>
+
+				<!-- INFORMATION -->
+				<div class="name">
+					Salvador Gouveia
+				</div>
+				<div class="company-info">
+					CEO, Scanimator Limitada
+				</div>
+
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+
+
+		</div>
+		<!-- /END FEEDBACKS -->
+
+	</div>
+	<!-- /END CONTAINER -->
+
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END TESTIMONIALS SECTION -->
+
+<!-- =========================
+     SCREENSHOTS
+============================== -->
+<section class="screenshots deep-dark-bg" id="screenshot-section">
+
+<div class="container">
+
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<!-- SECTION TITLE -->
+		<h2 class="white-text">Screenshots</h2>
+
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			Imagens da Aplicação
+		</div>
+		<div class="colored-line">
+		</div>
+
+	</div>
+	<!-- /END SECTION HEADER -->
+
+	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+		<div id="screenshots" class="owl-carousel owl-theme">
+
+			<div class="shot">
+				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
+			</div>
+
+			<div class="shot">
+				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
+			</div>
+
+		</div>
+		<!-- /END SCREENSHOTS -->
+
+	</div>
+	<!-- /END ROW -->
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SCREENSHOTS SECTION -->
+
+<!-- =========================
+     FOOTER
+============================== -->
+<footer>
+
+<div class="container">
+
+
+
+	<!-- LOGO -->
+	<img src="images/logo.png" alt="LOGO" class="responsive-img">
+
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href="https://www.facebook.com"><i class="social_facebook_square"></i></a></li>
+		<li><a href="https://twitter.com/"><i class="social_twitter_square"></i></a></li>
+		<li><a href="https://pt.pinterest.com/"><i class="social_pinterest_square"></i></a></li>
+		<li><a href="https://plus.google.com/"><i class="social_googleplus_square"></i></a></li>
+		<li><a href="https://instagram.com/"><i class="social_instagram_square"></i></a></li>	</ul>
+
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2015 Scanimator, Todos os Direitos Reservados
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+
+</footer>
+<!-- /END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript">
+  $('.carousel').carousel({
+  interval: 5000,
+  pause: "hover"
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,389 @@
+﻿.ninjaGantt *
+{
+    font-size:0px;
+    box-sizing:border-box;
+    
+    margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+.ninjaGantt span
+{
+    font-size:12px;
+    color:#000;
+}
+
+.ninjaGantt
+{
+    position:relative;
+    border:1px solid #ccc;
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ninjaGantt.fixed
+{
+    position:absolute !important;
+    width:auto !important;
+    top: 50px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+}
+
+.divGanttLeft
+{
+    position:relative;
+    display:inline-block;
+    width:40%;
+    vertical-align: top;
+    padding-right:6px;
+    height: 100%;
+}
+.divGanttLeft-Wrapper
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    white-space:nowrap;
+    height: 100%;
+}
+
+.divGanttRight
+{
+    position:relative;
+    display:inline-block;
+    width:60%;
+    vertical-align: top;
+    border-left:1px solid #ccc;
+    height: 100%;
+}
+.divGanttRight-Wrapper
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    white-space:nowrap;
+    height: 100%;
+}
+
+.divGanttLeft-header
+{
+    height:40px;
+    border-bottom:1px solid #ccc;
+    
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+    
+}
+.divGanttLeft-header-group
+{
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    vertical-align: top;
+    padding:0 10px;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    overflow:hidden;
+    
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+.divGanttRight-header-group
+{
+    height:40px;
+    display:inline-block;
+    vertical-align: top;
+    
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+
+}
+
+.divGanttRight-header-month
+{
+    height:20px;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    text-align:center;
+    display:block;
+    line-height:18px;
+}
+
+.divGanttRight-header-day
+{
+    height:20px;
+    width:20px;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    display:inline-block;
+    vertical-align: top;
+    text-align:center;
+    line-height:18px;
+}
+
+
+
+
+.divGanttLeft-body, .divGanttRight-body
+{
+    display:block;
+    vertical-align: top;
+    overflow:hidden;
+    padding-bottom:60px;
+}
+
+
+.divGantt-splitBar
+{
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    width:6px;
+    background-color:#e2e2e2;
+    border-left:1px solid #ccc;
+    z-index: 10;
+    cursor:w-resize;
+}
+
+
+.divGantt-scrollBar
+{
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    width:16px;
+    background-color:#e2e2e2;
+    border-left:1px solid #ccc;
+}
+.divGantt-scroll
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:36px;
+    border:2px solid #e2e2e2;
+    background-color:#999;
+}
+.divGantt-scroll:hover
+{
+    background-color:#444;
+}
+
+
+.divGanttLeft-column
+{
+    height:26px;
+    line-height:26px;
+    display:inline-block;
+    vertical-align: top;
+    padding:0 10px;
+    border-right:1px solid #ccc;
+    float:none !important;
+    overflow:hidden;
+}
+.divGantt-row
+{
+    height:26px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+.divGantt-cell
+{
+    width:20px;
+    height:26px;
+    border-right:1px solid #ccc;
+    display:inline-block;
+    position:relative;
+}
+.divGantt-cell.weekend
+{
+    background-color:rgba(155,155,155,0.15);
+    border-bottom:1px solid #ccc;
+}
+.divGantt-row i
+{
+    font-size:14px;
+    margin-right:5px;
+    cursor:pointer;
+}
+
+
+.divGantt-timebar
+{
+    height:4px;
+    position:absolute;
+    top:2px;
+    left:2px;
+    background-color:#000;
+    z-index:10;
+}
+.divGantt-timebar:before
+{
+    content: " ";
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 10px 0 0;
+    border-color: #000000 transparent transparent transparent;
+}
+.divGantt-timebar:after
+{
+    content: " ";
+    position:absolute;
+    top:0px;
+    right:0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 0 0 10px;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.divGantt-blockbar
+{
+    position:absolute;
+    top:2px;
+    left:2px;
+    height: 22px;
+    
+    background-color: #535456;
+    border: 1px solid #C0C0C0;
+    cursor: pointer;
+    z-Index:10;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow:hidden;
+}
+.divGantt-blockbar span
+{
+    color:White;
+    position:absolute;
+    top:1px;
+    left:2px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.divGantt-blockbar-perc
+{
+    height: 22px;
+    background:#6CA4CB;
+    -webkit-background-size: 30px 30px;
+    -moz-background-size: 30px 30px;
+    background-size: 30px 30px;			
+	background-image: -webkit-gradient(linear, left top, right bottom,
+						color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+						color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+						color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+						to(transparent));
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);
+    background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);            
+            
+    -webkit-animation: animate-stripes 3s linear infinite;
+    -moz-animation: animate-stripes 3s linear infinite;       	
+}
+
+.row-type-1,row-type-2,row-type-3
+{
+    height:26px;
+}
+
+.row-type-2:first-of-type>span
+{
+    padding-left:20px;
+}
+.row-type-3:first-of-type>span
+{
+    padding-left:40px;
+}
+
+.row-type-1 span
+{
+    font-size:14px !important;
+    font-weight:bold;
+}
+.row-type-2 span
+{
+    font-size:12px !important;
+    font-weight:bold;
+}
+.row-type-3 span
+{
+    font-size:12px !important;
+}
+
+.ninjaGantt i.drill
+{
+    font-size:14px;
+    margin-right:5px;
+    cursor:pointer;
+}
+
+.divGantt-row.hover
+{
+    background-color:#DEE4E8;
+}
+
+.divGanttLeft-body .divGantt-row[data-ngt-idt]:hover, .divGanttLeft-body .divGantt-row[data-ngt-idt] *:hover,
+.divGanttRight-body .divGantt-blockbar:hover
+{
+    cursor:pointer !important;
+}
+
+
+
+
+@-webkit-keyframes animate-stripes { 
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+@-moz-keyframes animate-stripes {
+	0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
